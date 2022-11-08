@@ -1,0 +1,9 @@
+[08-Nov-2022 20:57:19 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "Dica" not found in C:\xampp\htdocs\projeto01\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\projeto01\public\index.php on line 5
+[08-Nov-2022 20:58:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: o atributo titulos não tem método 'set' associado in C:\xampp\htdocs\projeto01\src\Core\DAO.PHP:37
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(8): Petshop\Core\DAO->__set('titulos', 'Teste')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DAO.PHP on line 37
