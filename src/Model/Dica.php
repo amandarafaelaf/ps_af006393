@@ -13,7 +13,7 @@ class Dica extends DAO
     #[Campo(label:'Cód. Dica', nn:true, pk:true, auto:true)]
     protected $idDica;
 
-    #[Campo(label:'Título', nn:true)]
+    #[Campo(label:'Título', nn:true, order:true)]
     protected $titulo;
 
     #[Campo(label:'Descrição')]
