@@ -16,7 +16,7 @@ class Dica extends DAO
     #[Campo(label:'Título', nn:true, order:true)]
     protected $titulo;
 
-    #[Campo(label:'Descrição')]
+    #[Campo(label:'Descrição', nn:true)]
     protected $descricao;
 
     #[Campo(label:'Dt. Criação', nn:true, auto:true)]
