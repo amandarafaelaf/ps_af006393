@@ -16,7 +16,7 @@ class Render
     static public function front(string $pagina, array $dados=[])
     {
         // monta o caminho do local onde a página solicitada está
-        $pathPagina = TFRONTEND . 'pages/' . $pagina . 'php';
+        $pathPagina = TFRONTEND . 'pages/' . $pagina . '.php';
 
         if (!file_exists($pathPagina)) {
             error_log('Página template não localizada em: '.$pathPagina);

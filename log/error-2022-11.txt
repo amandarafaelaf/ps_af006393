@@ -79,3 +79,87 @@ Stack trace:
 #1 C:\xampp\htdocs\projeto01\public\index.php(10): Petshop\Core\DAO->save()
 #2 {main}
   thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 89
+[11-Nov-2022 20:35:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:35:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(8): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:35:34 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:35:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(8): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:36:02 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/home.phpphp
+[11-Nov-2022 20:36:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home.php' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(8): Petshop\View\Render::front('home.php')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:36:02 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/home.phpphp
+[11-Nov-2022 20:36:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home.php' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(8): Petshop\View\Render::front('home.php')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:36:32 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:36:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:36:32 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:36:32 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:37:42 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:37:42 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:37:42 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:37:42 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:37:43 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:37:43 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:37:43 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:37:43 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:38:02 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:38:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:38:02 America/Sao_Paulo] Página template não localizada em: C:\xampp\htdocs\projeto01\config/../templates/frontend/pages/homephp
+[11-Nov-2022 20:38:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Exception: A página solicitada 'home' não foi localizada in C:\xampp\htdocs\projeto01\src\View\Render.php:23
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 23
+[11-Nov-2022 20:38:54 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\projeto01\config/../templates/frontend/common/bottom.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projeto01\src\View\Render.php on line 35
+[11-Nov-2022 20:38:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\projeto01\config/../templates/frontend/common/bottom.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\projeto01\src\View\Render.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 35
+[11-Nov-2022 20:38:55 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\htdocs\projeto01\config/../templates/frontend/common/bottom.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\projeto01\src\View\Render.php on line 35
+[11-Nov-2022 20:38:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\projeto01\config/../templates/frontend/common/bottom.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\projeto01\src\View\Render.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\View\Render::front('home')
+#1 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 35
