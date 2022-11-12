@@ -1,1 +1,9 @@
-olá estamos no index
+<p>olá estamos na homepage</p>
+
+<ul>
+<?php
+    foreach($estados as $e) {
+        echo "<li>{$e['estado']}</li>";
+    }
+?>
+</ul>

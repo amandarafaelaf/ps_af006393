@@ -148,7 +148,7 @@ class DAO
         $orderBy = '';
         if (count($order)) {
             $orderBy = 'ORDER BY ' . implode(', ', $order);
-        } else {
+        } else if ($this->getOrderByField()) {
             $orderBy = 'ORDER BY ' . $this->getOrderByField();
         }
 

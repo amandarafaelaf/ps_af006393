@@ -1,18 +1,44 @@
 <?php
 
-// estados
+namespace Petshop\Model;
 
-class Estado
+use Petshop\Core\Attribute\Campo;
+use Petshop\Core\Attribute\Entidade;
+use Petshop\Core\DAO;
+
+#[Entidade(name: 'estados')]
+
+class Estado extends DAO
 {
-    // UF, pk, nn
+    #[Campo(label:'UF', nn:true, pk:true)]
     protected $uf;
 
-    // Dados IBGE, nn
+    #[Campo(label:'IBGE', nn:true)]
     protected $ibge;
 
-    // Estado, nn
+    #[Campo(label:'Estado', nn:true, order:true)]
     protected $estado;
 
-    // Região, nn
+    #[Campo(label:'Região', nn:true)]
     protected $regiao;
+
+    public function getUf()
+    {
+        return $this->uf;
+    }
+
+    public function getIbge()
+    {
+        return $this->ibge;
+    }
+
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    public function getRegiao()
+    {
+        return $this->regiao;
+    }
 }
