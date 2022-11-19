@@ -267,3 +267,16 @@ Stack trace:
 #7 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
 #8 {main}
   thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 60
+[16-Nov-2022 20:44:48 America/Sao_Paulo] PHP Warning:  Undefined variable $pathPagina in C:\xampp\htdocs\projeto01\src\View\Render.php on line 61
+[16-Nov-2022 20:44:48 America/Sao_Paulo] PHP Warning:  require_once(C:\xampp\php\pear): Failed to open stream: Permission denied in C:\xampp\htdocs\projeto01\src\View\Render.php on line 61
+[16-Nov-2022 20:44:48 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\projeto01\src\View\Render.php:61
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(18): Petshop\View\Render::block('topo')
+#1 [internal function]: Petshop\Controller\HomeController->index()
+#2 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(32): Bramus\Router\Router->run()
+#6 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#7 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 61

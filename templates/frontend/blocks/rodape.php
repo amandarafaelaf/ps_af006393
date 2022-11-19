@@ -25,11 +25,11 @@
         <div class="info-matriz row mt-5 text-center">
             <div>Preços e condições exclusivos para o <?=$site??''?> (exceto alimentos e bebidas), podendo sofrer alterações sem prévia notificação.</div>
             <div>
-                <?=$nomeFantasia??''?> |
+                <?=$nomefantasia??''?> |
                 <?=$site??''?> |
                 <?=$rua??''?>, <?=$bairro??''?>, Nrº <?=$numero??''?> |
                 <?=$cidade??''?>, <?=$estado??''?>, CEP: <?=$cep??''?> |
-                CNPJ: <?=$nomeFantasia??''?> |
+                CNPJ: <?=$nomefantasia??''?> |
                 Telefones: <?=$telefone1??''?> - <?=$telefone2??''?> |
             </div>
             <div>Ao utilizar o copom de desconto, certifique-se que o mesmo está no período de validade.</div>
