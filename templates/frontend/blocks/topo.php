@@ -55,7 +55,7 @@
             </div>
             <div class="topo-site-inferior-fone col-4 justify-content-end d-flex align-items-center">
                 <i class="bi bi-telephone pe-2"></i>
-                <span>(11) 3303-9911</span>
+                <span><?= $telefone1??'' ?></span>
             </div>
         </div>
     </div>
