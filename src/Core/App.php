@@ -40,6 +40,7 @@ class App
     private static function registaRotasDoFrontEnd() 
     {
         self::$router->get('/', '\Petshop\Controller\HomeController@index');
+        self::$router->get('/login', '\Petshop\Controller\LoginController@login');
     }
 
     /**

@@ -57,3 +57,10 @@
 {
     font-size: .8em;
 }
+
+/* classes de apoio */
+
+.pg-login .btn-conta
+{
+    margin-top: 7em;
+}
