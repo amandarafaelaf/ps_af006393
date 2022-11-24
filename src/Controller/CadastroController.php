@@ -2,7 +2,9 @@
 
 namespace Petshop\Controller;
 
+use Exception;
 use Petshop\Core\FrontController;
+use Petshop\Model\Cliente;
 use Petshop\View\Render;
 
 class CadastroController extends FrontController
@@ -18,13 +20,39 @@ class CadastroController extends FrontController
         Render::front('cadastro', $dados);
     }
 
+    public function postCadastro()
+    {
+        try {
+            $cliente = new Cliente;
+            $cliente->tipo    = $_POST['tipo']    ?? null;
+            $cliente->cpfcnpj = $_POST['cpfcnpj'] ?? null;
+            $cliente->nome    = $_POST['nome']    ?? null;
+            $cliente->email   = $_POST['email']   ?? null;
+            $cliente->senha   = $_POST['senha']   ?? null;
+
+            if ($_POST['senha'] != $_POST['senha2']) {
+                throw new Exception('As senhas devem ser iguais');
+            }
+            $cliente->save();
+
+        } catch(Exception $e) {
+            $_SESSION['mensagem'] = [
+                'tipo'  =>  'warning',
+                'texto' =>  $e->getMessage()
+            ];
+            $this->cadastro();
+        }
+
+        redireciona('/login', 'info', 'Cadastro realizado com sucesso, faça o login para continuar');
+    }
+
     private function formCadastro()
     {
         $dados = [
             'btn_label'=>'Criar minha conta',
             'btn_class'=>'btn btn-success mt-5',
             'fields'=>[
-                ['type'=>'radio-inline', 'class'=>'col-6', 'label'=>'Você é pessoa:', 'name'=>'tipo', 
+                ['type'=>'radio-inline', 'class'=>'col-6', 'label'=>'Você é pessoa', 'name'=>'tipo', 
                     'options'=>[
                         ['label'=>'Física', 'value'=>'F'],
                         ['label'=>'Jurídica', 'value'=>'J']
