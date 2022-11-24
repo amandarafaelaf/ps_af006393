@@ -33,6 +33,12 @@ class CadastroController extends FrontController
             if ($_POST['senha'] != $_POST['senha2']) {
                 throw new Exception('As senhas devem ser iguais');
             }
+
+            $resultado = $cliente->find(['email ='=>$cliente->email]);
+            if (!empty($resultado)) {
+                throw new Exception('Endereço de e-mail já cadastrado, selecione recuperar senha caso necessário');
+            }
+
             $cliente->save();
 
         } catch(Exception $e) {
