@@ -11,6 +11,10 @@ class LoginController extends FrontController
 {
     public function login()
     {
+        if (!empty($_SESSION['cliente'])) {
+            redireciona('/meus-dados');
+        }
+
         $dados = [];
         $dados['titulo'] = 'Página de Login | Cadastro';
         $dados['topo'] = $this->carregaHTMLTopo();
@@ -19,6 +23,15 @@ class LoginController extends FrontController
 
         Render::front('login', $dados);
     }
+
+    public function logout()
+    {
+        $_SESSION = [];
+        session_destroy();
+        session_start();
+        redireciona('/login', 'info', 'Usuário desconectado');
+    }
+
     public function postLogin()
     {
         try {
