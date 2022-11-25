@@ -1,3 +1,28 @@
+<?php
+    if (empty($cliente)) {
+        $opcaoLogin = <<<HTML
+                <a href="/login" title="Entrar/Cadastrar" class="d-flex align-items-center lh-1">
+                    <i class="bi bi-person fs-3 pe-2"></i>
+                    <span>Entre ou<br>cadastre-se</span>
+                </a>
+            HTML;
+    } else {
+        $opcaoLogin = <<<HTML
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Olá <strong>{$cliente['prinome']}</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="/meus-dados">Minha área</a></li>
+                    <li><a class="dropdown-item" href="/meus-pedidos">Meus pedidos</a></li>
+                    <li><hr class="dropdown-divider border-light"></li>
+                    <li><a class="dropdown-item" href="/logout">Sair</a></li>
+                </ul>
+                </div>
+        HTML;
+    }
+?>
+
 <!-- hack para o topo fixo não "comer" o conteúdo da página -->
 <div style="margin-top: 5.5em">&nbsp;</div>
 
@@ -15,12 +40,9 @@
                     <button type="submit" class="btn-busca"><i class="bi bi-search"></i></button>
                 </form>
             </div>
-            <div class="topo-site-opcoes col-4 row text-center align-items-center">
+            <div class="topo-site-opcoes col-4 row align-items-center">
                 <div class="col-8 topo-site-opcoes-usr">
-                    <a href="/login" title="Entrar/Cadastrar" class="d-flex align-items-center">
-                        <i class="bi bi-person fs-3 pe-2"></i>
-                        <span>Entre ou cadastre-se</span>
-                    </a>
+                    <?= $opcaoLogin ?>
                 </div>
                 <div class="col-4 d-flex justify-content-between">
                     <a href="/favoritos" title="Ver meus favoritos" class="px-3">
@@ -55,7 +77,7 @@
             </div>
             <div class="topo-site-inferior-fone col-4 justify-content-end d-flex align-items-center">
                 <i class="bi bi-telephone pe-2"></i>
-                <span><?= $telefone1??'' ?></span>
+                <span><?= $telefone1 ?? '' ?></span>
             </div>
         </div>
     </div>

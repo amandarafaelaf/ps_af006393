@@ -14,6 +14,7 @@ class MeusDadosController extends FrontController
         $dados = [];
         $dados['topo'] = $this->carregaHTMLTopo();
         $dados['rodape'] = $this->carregaHTMLRodape();
+        $dados['cliente'] = $_SESSION['cliente'];
 
         Render::front('meus-dados', $dados);
     }
