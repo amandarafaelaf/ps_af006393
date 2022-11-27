@@ -81,11 +81,15 @@ class Render
             throw new Exception("A página solicitada '{$pagina}' não foi localizada");
         }
 
+        $dados['nomesite'] = BACKEND_TITLE;
+
         if (empty($dados['titulo'])) {
             $dados['titulo'] = BACKEND_TITLE;
         } else {
+            $dados['tituloInterno'] = $dados['titulo'];
             $dados['titulo'] = $dados['titulo'] . ' - ' . BACKEND_TITLE;
         }
+
         extract($dados); // transforma os índices do vetor em variáveis
 
         require_once TBACKEND . 'common/top.php';
