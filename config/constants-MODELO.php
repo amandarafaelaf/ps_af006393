@@ -10,7 +10,7 @@
  define('DISPLAY_ERRORS', 1);
  define('PATH_PROJETO', __DIR__ . '/../');
  define('SALT_SENHA', '123ABC');
-
+ 
  /**
   * DEFINIÇÕES DE PATH DE ARQUIVOS
   */
@@ -36,5 +36,7 @@
  define('MAIL_HOST', 'smtp.gmail.com');
  define('MAIL_PORT', 587);
  define('MAIL_NAME', 'Bicho Novo PetShop');
- define('MAIL_USER', '');
+ define('MAIL_USER', 'af006393@cfjl.com.br');
  define('MAIL_PASS', '');
+ define('MAIL_CONTACTNAME', 'Amanda Atendedora');
+ define('MAIL_CONTACTMAIL', 'af006393@cfjl.com.br');

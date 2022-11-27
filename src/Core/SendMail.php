@@ -9,7 +9,7 @@ use Petshop\Core\Exception as PetshopException;
 
 class SendMail
 {
-    public static function enviar(string $paraNome, string $paraEmail, string $assunto, string $mensagem)
+    public static function enviar(string $paraNome, string $paraEmail, string $assunto, string $mensagem, string $replyToName='', string $replyToEmail='')
     {
 
         //Cria uma instância e habilita as excessões
@@ -31,7 +31,9 @@ class SendMail
 
             $mail->addAddress($paraEmail, $paraNome);
 
-            //$mail->addReplyTo('info@example.com', 'Information');
+            if ($replyToName && $replyToEmail) {
+                $mail->addReplyTo($replyToEmail, $replyToName);
+            }
             //$mail->addCC('cc@example.com');
             //$mail->addBCC('bcc@example.com');
 
