@@ -62,7 +62,7 @@ class Cliente extends DAO
     }
     public function setCpfCnpj(string $cpfCnpj): self
     {
-        if (in_array($this->tipo, ['F', 'J'])) {
+        if (!in_array($this->tipo, ['F', 'J'])) {
             throw new Exception('O tipo de pessoa precisa ser definido antes do documento (F/J)');
         }
 
@@ -113,6 +113,9 @@ class Cliente extends DAO
     }
     public function setSenha(string $senha): self
     {
+        if (strlen($senha) < 5) {
+            throw new Exception('Senha muito curta, digite ao menos 5 caracteres');
+        }
         $hashDaSenha = hash_hmac('md5', $senha, SALT_SENHA);
         $senha = password_hash($hashDaSenha, PASSWORD_DEFAULT);
         
