@@ -64,14 +64,14 @@ class FaleConoscoController extends FrontController
             $this->faleConosco();
             exit;
         }
-        redireciona('/fale-conosco', 'sucess', 'Mensagem enviada com sucesso');
+        redireciona('/fale-conosco', 'success', 'Mensagem enviada com sucesso');
     }
 
     public function FormFaleConosco()
     {
         $dados = [
             'btn_label'=>'Enviar mensagem',
-            'btn_class'=>'btn btn-warning w-50',
+            'btn_class'=>'btn btn-warning w-50 text-light',
             'fields' => [
                 ['type' => 'text', 'name' => 'nome', 'label' => 'Nome Completo', 'required' => true],
                 ['type' => 'email', 'name' => 'email', 'label' => 'E-mail', 'required' => true],
