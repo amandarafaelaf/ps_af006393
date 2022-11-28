@@ -47,7 +47,7 @@
         $linkEdicao = "{$rotaAtual}/{$valorChave}";
         $htmlLinhas .= <<<HTML
             <td class="text-center">
-                <a href="{$linkEdicao}" class="text-danger" title="Editar registro">
+                <a href="{$linkEdicao}" class="text-warning" title="Editar registro">
                     <i class="bi bi-pencil-square"></i>
                 </a>
             </td>
