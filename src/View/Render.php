@@ -45,7 +45,7 @@ class Render
     static public function block(string $bloco, array $dados=[])
     {
         // monta o caminho do local onde o bloco solicitada está
-        $pathArquivo = TFRONTEND . 'blocks/' . $bloco . '.php';
+        $pathArquivo = TEMPLATES . 'blocks/' . $bloco . '.php';
 
         if (!file_exists($pathArquivo)) {
             error_log('Bloco não localizado em: '.$pathArquivo);
