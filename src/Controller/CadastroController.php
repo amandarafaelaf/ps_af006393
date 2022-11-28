@@ -47,6 +47,7 @@ class CadastroController extends FrontController
                 'texto' =>  $e->getMessage()
             ];
             $this->cadastro();
+            exit;
         }
 
         redireciona('/login', 'info', 'Cadastro realizado com sucesso, faça o login para continuar');
