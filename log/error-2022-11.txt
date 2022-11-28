@@ -280,3 +280,40 @@ Stack trace:
 #6 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
 #7 {main}
   thrown in C:\xampp\htdocs\projeto01\src\View\Render.php on line 61
+[21-Nov-2022 19:23:52 America/Sao_Paulo] PHP Warning:  Undefined array key "POST" in C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php on line 292
+[21-Nov-2022 21:19:03 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\projeto01\src\Core\App.php on line 69
+[22-Nov-2022 19:36:41 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "}", expecting ";" in C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php on line 35
+[22-Nov-2022 19:36:50 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "}", expecting ";" in C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php on line 35
+[22-Nov-2022 19:42:00 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected single-quoted string "required", expecting "]" in C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php on line 32
+[22-Nov-2022 20:22:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Undefined constant "Petshop\Model\SALT_SENHA" in C:\xampp\htdocs\projeto01\src\Model\Cliente.php:116
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DAO.php(46): Petshop\Model\Cliente->setSenha('1234')
+#1 C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php(32): Petshop\Core\DAO->__set('senha', '1234')
+#2 [internal function]: Petshop\Controller\CadastroController->postCadastro()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Model\Cliente.php on line 116
+[24-Nov-2022 19:22:25 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\projeto01\src\Controller\CadastroController.php on line 47
+[24-Nov-2022 19:59:30 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[24-Nov-2022 20:12:16 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\xampp\htdocs\projeto01\templates\frontend\pages\meus-dados.php on line 3
+[24-Nov-2022 20:41:02 America/Sao_Paulo] PHP Warning:  Undefined variable $opcaoLogin in C:\xampp\htdocs\projeto01\templates\frontend\blocks\topo.php on line 33
+[24-Nov-2022 21:42:05 America/Sao_Paulo] PHP Warning:  Undefined array key "prinome" in C:\xampp\htdocs\projeto01\templates\frontend\blocks\topo.php on line 13
+[27-Nov-2022 16:22:38 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[27-Nov-2022 16:22:38 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[27-Nov-2022 16:23:51 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[27-Nov-2022 16:23:51 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[27-Nov-2022 16:24:45 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[27-Nov-2022 16:24:45 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[27-Nov-2022 16:27:23 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[27-Nov-2022 16:29:01 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[27-Nov-2022 16:29:01 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[27-Nov-2022 17:05:34 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[27-Nov-2022 17:05:34 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[27-Nov-2022 17:05:40 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[27-Nov-2022 17:05:40 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
+[27-Nov-2022 17:06:05 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
+[27-Nov-2022 17:06:05 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45

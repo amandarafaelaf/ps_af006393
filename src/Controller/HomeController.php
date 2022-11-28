@@ -10,11 +10,8 @@ class HomeController extends FrontController
 {
     public function index()
     {
-        $estados = ( new Estado() )->find();
-
         $dados = [];
-        $dados['titulo'] = 'Lista de Estados';
-        $dados['estados'] = $estados;
+        $dados['titulo'] = 'Página inicial';
         $dados['topo'] = $this->carregaHTMLTopo();
         $dados['rodape'] = $this->carregaHTMLRodape();
 
