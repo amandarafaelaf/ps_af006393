@@ -1,1 +1,1 @@
-listagem de clientes
+<?=$tabela ?? ''?>
