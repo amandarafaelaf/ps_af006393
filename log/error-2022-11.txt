@@ -318,3 +318,9 @@ Stack trace:
 [27-Nov-2022 17:06:05 America/Sao_Paulo] Erro de e-mail: SMTP Error: Could not authenticate.
 [27-Nov-2022 17:06:05 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\projeto01\templates\frontend\common\top.php:26) in C:\xampp\htdocs\projeto01\resources\funcoes.php on line 45
 [27-Nov-2022 22:10:37 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 43
+[28-Nov-2022 20:51:37 America/Sao_Paulo] PHP Warning:  Undefined array key "idcliente" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 11
+[28-Nov-2022 20:51:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
+[28-Nov-2022 20:52:13 America/Sao_Paulo] PHP Warning:  Undefined array key "idcliente" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 11
+[28-Nov-2022 20:52:13 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
+[28-Nov-2022 20:52:15 America/Sao_Paulo] PHP Warning:  Undefined array key "idcliente" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 11
+[28-Nov-2022 20:52:15 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
