@@ -64,7 +64,7 @@ class Produto extends DAO
     public function setIdMarca($idMarca): self
     {
         $objMarca = new Marca;
-        if ($objMarca->loadById($idMarca)) {
+        if (!$objMarca->loadById($idMarca)) {
             throw new Exception('A marca informada é inválida');
         }
         $this->idMarca = $idMarca;

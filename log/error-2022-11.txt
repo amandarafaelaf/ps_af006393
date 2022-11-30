@@ -324,3 +324,9 @@ Stack trace:
 [28-Nov-2022 20:52:13 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
 [28-Nov-2022 20:52:15 America/Sao_Paulo] PHP Warning:  Undefined array key "idcliente" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 11
 [28-Nov-2022 20:52:15 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
+[29-Nov-2022 20:58:00 America/Sao_Paulo] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 11
+[29-Nov-2022 20:58:00 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
+[29-Nov-2022 20:59:04 America/Sao_Paulo] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 11
+[29-Nov-2022 20:59:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
+[29-Nov-2022 20:59:05 America/Sao_Paulo] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 11
+[29-Nov-2022 20:59:05 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\blocks\tabela-admin.php on line 16
