@@ -8,7 +8,7 @@ use Petshop\Core\DAO;
 use Petshop\Core\Exception;
 
 #[Entidade(name: 'produtos')]
-class Cidade
+class Produto extends DAO
 {
     #[Campo(label:'Cód. Produto', nn:true, pk:true, auto:true)]
     protected $idProduto;
@@ -131,7 +131,9 @@ class Cidade
     }
     public function setLargura($largura): self
     {
-        if (!is_numeric($largura) || $largura < 0){
+        if ($largura == '') {
+            $this->largura = null;
+        } else if (!is_numeric($largura) || $largura < 0){
             throw new Exception('Largura inválida para o produto');
         }
         $this->largura = $largura;
@@ -144,7 +146,9 @@ class Cidade
     }
     public function setAltura($altura): self
     {
-        if (!is_numeric($altura) || $altura < 0){
+        if ($altura == '') {
+            $this->altura = null;
+        } else if (!is_numeric($altura) || $altura < 0){
             throw new Exception('Altura inválida para o produto');
         }
         $this->altura = $altura;
@@ -157,7 +161,9 @@ class Cidade
     }
     public function setProfundidade($profundidade): self
     {
-        if (!is_numeric($profundidade) || $profundidade < 0){
+        if ($profundidade == '') {
+            $this->profundidade = null;
+        } else if (!is_numeric($profundidade) || $profundidade < 0){
             throw new Exception('Profundidade inválida para o produto');
         }
         $this->profundidade = $profundidade;
@@ -170,7 +176,9 @@ class Cidade
     }
     public function setPeso($peso): self
     {
-        if (!is_numeric($peso) || $peso < 0){
+        if ($peso == '') {
+            $this->peso = null;
+        } else if (!is_numeric($peso) || $peso < 0){
             throw new Exception('Peso inválido para o produto');
         }
         $this->peso = $peso;
@@ -185,11 +193,9 @@ class Cidade
     {
         $descricao = trim($descricao);
 
-        if (!$descricao) {
-            return $this;
-        }
-
-        if (strlen($descricao) < 10) {
+        if ($descricao == '') {
+            $this->descricao = null;
+        } else if (strlen($descricao) < 10) {
             throw new Exception('Descrição inválida');
         }
         $this->descricao = $descricao;
@@ -204,11 +210,9 @@ class Cidade
     {
         $especificacoes = trim($especificacoes);
 
-        if (!$especificacoes) {
-            return $this;
-        }
-        
-        if (strlen($especificacoes) < 10) {
+        if ($especificacoes == '') {
+            $this->especificacoes = null;
+        } else if (strlen($especificacoes) < 10) {
             throw new Exception('Especificações inválidas para o produto');
         }
         $this->especificacoes = $especificacoes;
