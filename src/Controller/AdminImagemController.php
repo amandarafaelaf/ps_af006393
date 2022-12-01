@@ -44,21 +44,31 @@ class AdminImagemController
 
     public function form($model, $idModel, $valor)
     {
+        $modelPath = "Petshop\\Model\\{$model}";
+        if (!class_exists($modelPath)) {
+            redireciona('/admin/dashboard', 'danger', 'Página não localizada/Clsse de dados destino não definida');
+        }
+
+        $objetoComFiguras = new $modelPath;
+        $objetoComFiguras->loadById($idModel);
+
         // verificar se o parâmetro tem um número e, se for número, é um ID válido
         if (is_numeric($valor)) {
-            $objeto = new Categoria;
-            $resultado = $objeto->find(['idcategoria ='=>$valor]);
+            $objeto = new Arquivo;
+            $resultado = $objeto->find(['idarquivo ='=>$valor]);
             if (empty($resultado)) {
-                redireciona('/admin/categorias', 'danger', 'Link inválido, registro não localizado');
+                redireciona("/admin/imagens/{$model}/{$idModel}", 'danger', 'Link inválido, registro não localizado');
             }
             $_POST = $resultado[0];
         }
 
         $dados = [];
-        $dados['titulo'] = 'Categorias - Manutenção';
+        $dados['titulo'] = 'Imagens - Manutenção';
         $dados['formulario'] = $this->renderizaFormulario(empty($_POST));
-
-        Render::back('categorias', $dados);
+        $campoOrdenacao = $objetoComFiguras->getOrderByField();
+        $dados['registroAlvo'] = $model . ': <u>' . $objetoComFiguras->$campoOrdenacao . '</u>';
+        
+        Render::back('imagens', $dados);
     }
 
     public function postForm($model, $idModel, $valor)
@@ -99,12 +109,15 @@ class AdminImagemController
         $dados = [
             'btn_class' => 'btn btn-warning px-5 mt-4 text-light',
             'btn_label' => ($novo ? 'Adicionar' : 'Atualizar'),
+            'enctype' => 'multipart/form-data',
             'fields' => [
-                ['type'=>'readonly', 'name'=>'idcategoria', 'class'=>'col-2', 'label'=>'ID Categoria'],
-                ['type'=>'text', 'name'=>'nome', 'class'=>'col-10', 'label'=>'Categoria', 'required'=>true],
-                ['type'=>'textarea', 'name'=>'descricao', 'class'=>'col-12', 'label'=>'Descrição'],
-                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Cirado em:'],
-                ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-6', 'label'=>'Atualizado em:'],
+                ['type'=>'readonly', 'name'=>'idarquivo', 'class'=>'col-2', 'label'=>'ID Arquivp'],
+                ['type'=>'readonly', 'name'=>'nome', 'class'=>'col-4', 'label'=>'Nome do Arquivo (automático)'],
+                ['type'=>'file', 'name'=>'arquivo', 'class'=>'col-4', 'label'=>'Arquivo', 'accept'=>'image/*'],
+                ['type'=>'readonly', 'name'=>'tipo', 'class'=>'col-2'],
+                ['type'=>'textarea', 'name'=>'descricao', 'class'=>'col-12', 'label'=>'Descrição', 'rows'=>'5'],
+                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-3', 'label'=>'Cirado em:'],
+                ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-3', 'label'=>'Atualizado em:'],
             ]
         ];
         return Render::block('form', $dados);
