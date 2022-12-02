@@ -3,6 +3,7 @@
 namespace Petshop\Controller;
 
 use Exception;
+use Gumlet\ImageResize;
 use Petshop\Model\Arquivo;
 use Petshop\View\Render;
 
@@ -73,16 +74,34 @@ class AdminImagemController
 
     public function postForm($model, $idModel, $valor)
     {
-        $objeto = new Categoria;
+        $objeto = new Arquivo;
 
         // se um $valor tem um número, carrega os dados do registro informado nele
         if (is_numeric($valor)) {
             if (!$objeto->loadById($valor)) {
-                redireciona('/admin/categorias', 'danger', 'Link inválido, registro não localizado');
+                redireciona("/admin/imagens/{$model}/{$idModel}", 'danger', 'Link inválido, registro não localizado');
             }
         }
 
         try {
+            if (!empty($_FILES['arquivo']['name'])) {
+                $_POST['nome'] = $_FILES['arquivo']['name'];
+                $_POST['tipo'] = 'Imagem';
+            }
+
+            $modelPath = "Petshop\\Model\\{$model}";
+            if (!class_exists($modelPath)) {
+                redireciona('/admin/dashboard', 'danger', 'Página não localizada/Clsse de dados destino não definida');
+            }
+
+            // pega as informações do objeto dono do arquivo, como nome da tabela, cmapo chave e valor do campo chave
+            $objetoComFiguras = new $modelPath;
+            $objetoComFiguras->loadById($idModel);
+            $tabela = $objetoComFiguras->getTableName();
+            $tabelaChave = $objetoComFiguras->getPkName();
+            $_POST['tabela'] = "{$tabela}.{$tabelaChave}";
+            $_POST['tabelaid'] = $idModel;
+
             $campos = array_change_key_case($objeto->getFields());
             foreach($campos as $campo => $propriedades) {
                 if (isset($_POST[$campo])) {
@@ -92,16 +111,34 @@ class AdminImagemController
             
             $objeto->save();
 
+            // se foi enviado arquivo novo, mover para a pasta de uploads com o id do arquivo como seu nome
+            if (!empty($_FILES['arquivo']['name'])) {
+                $nomeChave = $objeto->getPkName();
+                $valorChave = $objeto->$nomeChave;
+                $NomeArquivo = $valorChave . '.' . pathinfo($objeto->nome, PATHINFO_EXTENSION);
+                $pathArquivo = PATH_PROJETO . 'public/assets/img/uploads/' . $NomeArquivo;
+
+                if (!move_uploaded_file($_FILES['arquivo']['tmp_name'], $pathArquivo)) {
+                    throw new Exception('Falha ao mover o arquivo, verifique permissões');
+                }
+
+                rename($pathArquivo, $pathArquivo . '_original');
+                $image = new ImageResize($pathArquivo . '_original');
+                $image->crop(700,700);
+                $image->save($pathArquivo);
+                unlink($pathArquivo . '_original');
+            }
+
         } catch(Exception $e) {
             $_SESSION['mensagem'] = [
                 'tipo'=>'warning',
                 'texto'=>$e->getMessage()
             ];
-            $this->form($valor);
+            $this->form($model, $idModel, $valor);
             exit;
         }
 
-        redireciona('/admin/categorias', 'success', 'Alterações realizadas com sucesso');
+        redireciona("/admin/imagens/{$model}/{$idModel}", 'success', 'Alterações realizadas com sucesso');
     }
 
     public function renderizaFormulario($novo)
