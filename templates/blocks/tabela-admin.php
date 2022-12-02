@@ -59,7 +59,7 @@
             $model = pathinfo($objeto::class, PATHINFO_BASENAME);
             $rotaImagens = "/admin/imagens/{$model}/{$valorChave}"; 
             $btnImagem = <<<HTML
-                <a href="{$linkEdicao}" class="text-success text-decoration-none px-1" title="Editar Imagens">
+                <a href="{$rotaImagens}" class="text-success text-decoration-none px-1" title="Editar Imagens">
                     <i class="bi bi-file-image"></i>
                 </a>
             HTML;

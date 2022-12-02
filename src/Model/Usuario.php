@@ -21,7 +21,7 @@ class Usuario extends DAO
     #[Campo(label:'Qtd. Acessos', nn:true)]
     protected $qtdAcessos;
 
-    #[Campo(label:'Nome Completo', nn:true)]
+    #[Campo(label:'Nome Completo', nn:true, order:true)]
     protected $nome;
 
     #[Campo(label:'E-mail', nn:true)]

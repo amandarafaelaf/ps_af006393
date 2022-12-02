@@ -7,12 +7,14 @@ use Petshop\Core\Attribute\Entidade;
 use Petshop\Core\DAO;
 use Petshop\Core\Exception;
 
+#[Entidade(name: 'arquivos')]
+
 class Arquivo extends DAO
 {
     #[Campo(label:'Cód. Arquivo', nn:true, pk:true, auto:true)]
     protected $idArquivo;
 
-    #[Campo(label:'Cód. Marca', nn:true, order:true)]
+    #[Campo(label:'Nome', nn:true, order:true)]
     protected $nome;
 
     #[Campo(label:'Tipo', nn:true)]
@@ -35,7 +37,7 @@ class Arquivo extends DAO
 
     public function getIdarquivo()
     {
-        return $this->idarquivo;
+        return $this->idArquivo;
     }
 
     public function getNome()
@@ -90,11 +92,11 @@ class Arquivo extends DAO
 
     public function getTabelaid()
     {
-        return $this->tabelaid;
+        return $this->tabelaId;
     }
-    public function setTabelaid($tabelaid): self
+    public function settabelaId($tabelaId): self
     {
-        $this->tabelaid = $tabelaid;
+        $this->tabelaId = $tabelaId;
         return $this;
     }
 
