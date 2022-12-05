@@ -76,6 +76,8 @@ class App
 
             self::$router->get('/dashboard', '\Petshop\Controller\AdminDashboardController@index');
 
+            self::$router->get('/remover/(\w+)/(\d+)', '\Petshop\Controller\AdminRemoveController@acao');
+
             self::$router->get('/clientes', '\Petshop\Controller\AdminClienteController@listar');
             self::$router->get('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@form');
             self::$router->post('/clientes/{valor}', '\Petshop\Controller\AdminClienteController@postForm');

@@ -67,3 +67,25 @@ Stack trace:
 [01-Dec-2022 21:25:41 America/Sao_Paulo] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php on line 121
 [01-Dec-2022 21:25:52 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php on line 121
 [01-Dec-2022 21:25:52 America/Sao_Paulo] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\projeto01\src\Controller\AdminImagemController.php on line 121
+[04-Dec-2022 21:20:02 America/Sao_Paulo] ERRO PDO: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.idcategoria' in 'on clause', na LINHA: 65
+SELECT p.idproduto, p.nome, m.marca idmarca, c.nome idcategoria,
+                        FORMAT(p.preco, 2, "pt_BR") preco
+                FROM produtos p
+                INNER JOIN marcas m ON m.idmarca = p.idmarca
+                INNER JOIN categorias c ON c.idcategoria = p.idcategoria
+                ORDER BY p.nome
+Parâmetros:
+array (
+)
+[04-Dec-2022 21:20:02 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao executar comando no banco de dados in C:\xampp\htdocs\projeto01\src\Core\DB.php:86
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT p.idprod...', Array)
+#1 C:\xampp\htdocs\projeto01\src\Controller\AdminProdutoController.php(22): Petshop\Core\DB::select('SELECT p.idprod...')
+#2 [internal function]: Petshop\Controller\AdminProdutoController->listar()
+#3 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#6 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#7 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#8 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 86
