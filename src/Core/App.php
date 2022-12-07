@@ -46,6 +46,9 @@ class App
     private static function registaRotasDoFrontEnd() 
     {
         self::$router->get('/', '\Petshop\Controller\HomeController@index');
+
+        self::$router->post('/ajax', '\Petshop\Controller\AjaxController@loader');
+
         self::$router->get('/login', '\Petshop\Controller\LoginController@login');
         self::$router->get('/logout', '\Petshop\Controller\LoginController@logout');
         self::$router->post('/login', '\Petshop\Controller\LoginController@postLogin');

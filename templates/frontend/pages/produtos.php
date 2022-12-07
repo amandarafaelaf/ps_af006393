@@ -7,17 +7,17 @@ $produto['precodesconto'] = $produto['preco'] * (1 - $produto['desconto']);
 
     <div class="row">
         <div class="col-7 row">
-            <div class="col-12">
+            <div class="col-11">
                 <img class="img-fluid img-produto " src="<?= $imagens[0]['url'] ?>" alt="<?= $produto['nome'] ?>">
             </div>
         </div>
 
         <div class="col-5 pt-5">
             <div>
-                <h1 class="h3 text-justify" style="font-size: 1.5em;"><?= $produto['nome'] ?></h1>
+                <h1 class="h3 text-justify" style="font-size: 2em;"><?= $produto['nome'] ?></h1>
             </div>
 
-            <div class="ms-auto bg-light rounded p-3 mt-4">
+            <div class="ms-auto bg-light rounded p-4 mt-4">
                 <div class="preco preco-desconto">
                     <span class="text-decoration-line-through text-muted">
                         R$ <?= number_format($produto['preco'], 2, ',', '.') ?>
@@ -63,7 +63,7 @@ $produto['precodesconto'] = $produto['preco'] * (1 - $produto['desconto']);
                 </div>
             </div>
 
-            <p class="text-justify mt-4" style="font-size: .8em;"><?= str_replace("\n", '<br>', $produto['descricao']) ?></p>
+            <p class="text-justify mt-4" style="font-size: .9em;"><?= str_replace("\n", '<br>', $produto['descricao']) ?></p>
 
         </div>
     </div>
