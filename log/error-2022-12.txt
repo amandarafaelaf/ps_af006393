@@ -89,3 +89,71 @@ Stack trace:
 #7 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
 #8 {main}
   thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 86
+[06-Dec-2022 20:33:45 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[06-Dec-2022 20:33:45 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[06-Dec-2022 20:33:55 America/Sao_Paulo] ERRO PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? ORDER BY nome' at line 1, na LINHA: 65
+SELECT * FROM produtos WHERE 0 ? ORDER BY nome
+Parâmetros:
+array (
+  0 => true,
+)
+[06-Dec-2022 20:33:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao executar comando no banco de dados in C:\xampp\htdocs\projeto01\src\Core\DB.php:86
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM p...', Array)
+#1 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM p...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Controller\ProdutoController.php(21): Petshop\Core\DAO->find(Array)
+#3 [internal function]: Petshop\Controller\ProdutoController->mostrarProduto('1')
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#7 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#8 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#9 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 86
+[06-Dec-2022 20:34:52 America/Sao_Paulo] ERRO PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? ORDER BY nome' at line 1, na LINHA: 65
+SELECT * FROM produtos WHERE 0 ? ORDER BY nome
+Parâmetros:
+array (
+  0 => true,
+)
+[06-Dec-2022 20:34:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao executar comando no banco de dados in C:\xampp\htdocs\projeto01\src\Core\DB.php:86
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM p...', Array)
+#1 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM p...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Controller\ProdutoController.php(21): Petshop\Core\DAO->find(Array)
+#3 [internal function]: Petshop\Controller\ProdutoController->mostrarProduto('1')
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#7 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#8 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#9 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 86
+[06-Dec-2022 20:34:53 America/Sao_Paulo] ERRO PDO: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? ORDER BY nome' at line 1, na LINHA: 65
+SELECT * FROM produtos WHERE 0 ? ORDER BY nome
+Parâmetros:
+array (
+  0 => true,
+)
+[06-Dec-2022 20:34:53 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao executar comando no banco de dados in C:\xampp\htdocs\projeto01\src\Core\DB.php:86
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM p...', Array)
+#1 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM p...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Controller\ProdutoController.php(21): Petshop\Core\DAO->find(Array)
+#3 [internal function]: Petshop\Controller\ProdutoController->mostrarProduto('1')
+#4 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#7 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#8 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#9 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 86
+[06-Dec-2022 20:36:01 America/Sao_Paulo] PHP Warning:  Undefined array key "precodesconto" in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 32
+[06-Dec-2022 20:36:01 America/Sao_Paulo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 32
+[06-Dec-2022 20:36:01 America/Sao_Paulo] PHP Warning:  Undefined array key "precodesconto" in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 39
+[06-Dec-2022 20:46:49 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[06-Dec-2022 20:46:49 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[06-Dec-2022 21:03:02 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[06-Dec-2022 21:03:02 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[06-Dec-2022 21:37:34 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8
+[06-Dec-2022 21:37:34 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 8

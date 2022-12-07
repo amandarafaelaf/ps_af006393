@@ -60,7 +60,7 @@ class AdminLoginController
 
             $usuarioLogado = new Usuario;
             $usuarioLogado->loadById($dadosUsuario[0]['idusuario']);
-            $usuarioLogado->getQtdAcessos++;
+            $usuarioLogado->QtdAcessos++;
             $usuarioLogado->save();
             
             redireciona('/admin/dashboard');

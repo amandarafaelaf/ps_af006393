@@ -18,7 +18,7 @@ class AdminRemoveController
 
         $objeto = new $modelPath;
 
-        if ($objeto->loadById($idModel)) {
+        if (!$objeto->loadById($idModel)) {
             redireciona($urlOrigemClick, 'danger', 'O registro informado não foi localizado em ' . $model);
         }
 

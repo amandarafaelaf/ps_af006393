@@ -1,19 +1,19 @@
 .topo-site
 {
-    background-color: #231f20;
-    color: #efe6dd;
+    background-color: #b6a3c7;
+    color: #faf7f4;
 }
 
 .topo-site a
 {
-    color: #efe6dd;
+    color: #faf7f4;
     text-decoration: none;
     transition: 200ms;
 }
 
 .topo-site a:hover
 {
-    color: #f3dfa2;
+    color: #ded4e6;
 }
 
 .topo-site .input-busca
@@ -35,7 +35,7 @@
 
 .topo-site .dropdown-menu
 {
-    background-color: #231f20;
+    background-color: #b6a3c7;
 }
 
 .rodape-site 
@@ -68,4 +68,9 @@
 .pg-login .btn-conta
 {
     margin-top: 7em;
+}
+
+.text-justify
+{
+    text-align: justify;
 }

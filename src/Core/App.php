@@ -54,6 +54,8 @@ class App
         self::$router->get('/meus-dados', '\Petshop\Controller\MeusDadosController@meusDados');
         self::$router->get('/fale-conosco', '\Petshop\Controller\FaleConoscoController@faleConosco');
         self::$router->post('/fale-conosco', '\Petshop\Controller\FaleConoscoController@postFaleConosco');
+        self::$router->get('/categorias/{id}', '\Petshop\Controller\CategoriaController@lista');
+        self::$router->get('/produtos/{id}', '\Petshop\Controller\ProdutoController@mostrarProduto');
     }
 
     /**

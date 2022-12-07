@@ -145,7 +145,7 @@ class AdminProdutoController
                 ['type'=>'text', 'name'=>'peso', 'class'=>'col-2'],
 
                 ['type'=>'textarea', 'name'=>'descricao', 'class'=>'col-12', 'rows'=>4, 'label'=>'Descrição'],
-                ['type'=>'textarea', 'name'=>'especificacao', 'class'=>'col-12', 'rows'=>4, 'label'=>'Especificações'],
+                ['type'=>'textarea', 'name'=>'especificacoes', 'class'=>'col-12', 'rows'=>4, 'label'=>'Especificações'],
 
                 ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Cirado em:'],
                 ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-6', 'label'=>'Atualizado em:'],
