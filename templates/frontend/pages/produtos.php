@@ -8,7 +8,7 @@ $produto['precodesconto'] = $produto['preco'] * (1 - $produto['desconto']);
     <div class="row">
         <div class="col-7 row">
             <div class="col-11">
-                <img class="img-fluid img-produto " src="<?= $imagens[0]['url'] ?>" alt="<?= $produto['nome'] ?>">
+                <img class="img-fluid img-produto" src="<?= $imagens[0]['url'] ?>" alt="<?= $produto['nome'] ?>">
             </div>
         </div>
 

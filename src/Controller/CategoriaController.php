@@ -4,6 +4,7 @@ namespace Petshop\Controller;
 
 use Petshop\Core\FrontController;
 use Petshop\Model\Categoria;
+use Petshop\Model\Produto;
 use Petshop\View\Render;
 
 class CategoriaController extends FrontController
@@ -19,12 +20,22 @@ class CategoriaController extends FrontController
             redireciona('/', 'warning', 'Categoria não localizada');
         }
 
-        $categoriasLocalizadas = $categoria->find(['idcategoria='=>$idCategoria]);
-        $dados['categoria'] = $categoriasLocalizadas[0];
+        $dados['categoria'] = [];
+        $dados['categoria']['idcategoria'] = $categoria->getIdcategoria();
+        $dados['categoria']['nome'] = $categoria->getNome();
+        $dados['categoria']['descricao'] = $categoria->getDescricao();
+
         $dados['categoria']['imagens'] = $categoria->getFiles();
 
-        
+        $produtos = (new Produto)->find(['idcategoria=' => $categoria->getIdcategoria()]);
 
+        foreach($produtos as $p) {
+            $produtoAtual = new Produto;
+            $produtoAtual->loadById($p['idproduto']);
+            $p['imagens'] = $produtoAtual->getFiles();
+        }
+
+        $dados['produtos'] = $produtos;   
         Render::front('categorias', $dados);
     }
 }
