@@ -114,8 +114,8 @@ class AjaxController
         }
 
         // se vier ZERO então removemos o produto do carrinho
-        if (isset($dados['quantidade'])) {
-            $this->retorno('error', 'A quantidade precisa ser removida');
+        if (!isset($dados['quantidade'])) {
+            $this->retorno('error', 'A quantidade precisa ser informada');
         }
 
         $idcliente = (int) $_SESSION['cliente']['idcliente'];
@@ -148,6 +148,40 @@ class AjaxController
             $idcarrinho = $rows[0]['idcarrinho'];
         }
 
+        // PROCESSO QUE INSERE PRODUTOS DENTRO DO CARRINHO CRIADO OU JÁ EXISTENTE
 
+        if ($quantidade == 0) {
+            $sql = 'DELETE FROM carrinhosprodutos WHERE idcarrinho = ? AND idproduto = ?';
+            DB::query($sql, [$idcarrinho, $idproduto]);
+        } else {
+            $sql = 'SELECT idproduto
+                    FROM carrinhosprodutos
+                    WHERE idcarrinho = ?
+                    AND idproduto = ?';
+            $rows = DB::select($sql, [$idcarrinho, $idproduto]);
+
+            // se o produto não existir no carrinho, criamos o registro
+            if (empty($rows)) {
+                $sql = 'INSERT INTO carrinhosprodutos (idproduto, idcarrinho, preco, quantidade)
+                        VALUES (?, ?, ?, ?)';
+                $parametros = [$idproduto, $idcarrinho, $produto->preco, $quantidade];
+            } else {
+                $sql = 'UPDATE carrinhosprodutos
+                        SET quantidade = ?, preco = ?
+                        WHERE idproduto = ?
+                        AND idcarrinho = ?';
+                $parametros = [$quantidade, $produto->preco, $idproduto, $idcarrinho];
+            }
+
+            DB::query($sql, $parametros);
+        }
+
+        // atualiza o valor total dos produtos inseridos naquele carrinho de compras
+        $sql = 'UPDATE carrinhos
+                SET valortotal = (SELECT SUM(preco * quantidade) FROM carrinhosprodutos WHERE idcarrinho = ?)
+                WHERE idcarrinho = ?';
+        DB::query($sql, [$idcarrinho, $idcarrinho]);
+
+        $this->retorno('success', 'Processo executado com sucesso');
     }
 }
