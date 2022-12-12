@@ -95,4 +95,59 @@ class AjaxController
         
         $this->retorno('error', 'Falha ao registrar ação, nenhum registro alterado');
     }
+
+    /**
+     * Método que recebe pedidos de alteração de produto no carrinho
+     *
+     * @param array $dados espera-se idproduto e quantidade
+     * @return void
+     */
+    public function carrinho(array $dados)
+    {
+        if (empty($_SESSION['cliente'])) {
+            $this->retorno('error', 'Você precisa fazer o login antes');
+        }
+
+        $produto = new Produto;
+        if (empty($dados['idproduto']) || !$produto->loadById($dados['idproduto'])) {
+            $this->retorno('error', 'O produto informado não existe');
+        }
+
+        // se vier ZERO então removemos o produto do carrinho
+        if (isset($dados['quantidade'])) {
+            $this->retorno('error', 'A quantidade precisa ser removida');
+        }
+
+        $idcliente = (int) $_SESSION['cliente']['idcliente'];
+        $idproduto = (int) $dados['idproduto'];
+        $quantidade = (int) $dados['quantidade'];
+
+        if ($produto->getQuantidade() < $quantidade) {
+            $this->retorno('error', 'A quantidade solicitada é inferior a que temos em estoque');
+        }
+
+        // PROCESSO PARA GERAR UM ID DE UM CARRINHO DE COMPRAS QUE POSSA SER UTILIZADO
+
+        $sql = 'SELECT idcarrinho
+                FROM carrinhos
+                WHERE idcliente = ?
+                AND encerrado = "N" ';
+
+        $rows = DB::select($sql, [$idcliente]);
+
+        if (empty($rows)) {
+            $sql = 'INSERT INTO carrinhos (idcliente, valortotal) VALUES (?, 0)';
+            $st = DB::query($sql, [$idcliente]);
+
+            if (!$st->rowCount()) {
+                $this->retorno('error', 'Falha ao criar seu carrinho de compras, entre em contato com o suporte');
+            }
+
+            $idcarrinho = DB::getInstance()->lastInsertId();
+        } else {
+            $idcarrinho = $rows[0]['idcarrinho'];
+        }
+
+
+    }
 }
