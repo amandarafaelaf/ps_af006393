@@ -2,6 +2,7 @@
 namespace Petshop\Controller;
 
 use Petshop\Core\DB;
+use Petshop\Model\Produto;
 
 class AjaxController
 {
@@ -44,11 +45,23 @@ class AjaxController
         die(json_encode($resposta));
     }
 
+    /**
+     * Método responsável por pegar os dados recebidos e processar, marcando os produtos curtidos como favoritos
+     *
+     * @param array $dados espera no mínimo: idproduto
+     * @return void
+     */
     public function curtir($dados)
     {
         if (empty($_SESSION['cliente'])) {
             $this->retorno('error', 'Você precisa fazer o login antes');
         }
+
+        $produto = new Produto;
+        if (empty($dados['idproduto']) || !$produto->loadById($dados['idproduto'])) {
+            $this->retorno('error', 'O produto informado não existe');
+        }
+
         $sql = 'SELECT idfavorito, ativo
                 FROM favoritos
                 WHERE idproduto = ?
