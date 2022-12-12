@@ -149,7 +149,7 @@ class AdminImagemController
             'btn_label' => ($novo ? 'Adicionar' : 'Atualizar'),
             'enctype' => 'multipart/form-data',
             'fields' => [
-                ['type'=>'readonly', 'name'=>'idarquivo', 'class'=>'col-2', 'label'=>'ID Arquivp'],
+                ['type'=>'readonly', 'name'=>'idarquivo', 'class'=>'col-2', 'label'=>'ID Arquivo'],
                 ['type'=>'readonly', 'name'=>'nome', 'class'=>'col-4', 'label'=>'Nome do Arquivo (automático)'],
                 ['type'=>'file', 'name'=>'arquivo', 'class'=>'col-4', 'label'=>'Arquivo', 'accept'=>'image/*'],
                 ['type'=>'readonly', 'name'=>'tipo', 'class'=>'col-2'],
