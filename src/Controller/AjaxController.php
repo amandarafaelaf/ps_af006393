@@ -1,6 +1,8 @@
 <?php
 namespace Petshop\Controller;
 
+use Petshop\Core\DB;
+
 class AjaxController
 {
     /**
@@ -44,6 +46,40 @@ class AjaxController
 
     public function curtir($dados)
     {
-        $this->retorno('success', 'tudo certo', $dados);
+        if (empty($_SESSION['cliente'])) {
+            $this->retorno('error', 'Você precisa fazer o login antes');
+        }
+        $sql = 'SELECT idfavorito, ativo
+                FROM favoritos
+                WHERE idproduto = ?
+                AND idcliente = ?';
+        $parametros = [$dados['idproduto'], $_SESSION['cliente']['idcliente']];
+
+        $rows = DB::select($sql, $parametros);
+
+        $curtiu = true;
+        if (!$rows) {
+            $sql = 'INSERT INTO favoritos (idproduto, idcliente)
+                    VALUES (?, ?)';
+        } else if ($rows[0]['ativo'] == 'N') {
+            $sql = 'UPDATE favoritos
+                    SET ativo = "S"
+                    WHERE idproduto = ?
+                    AND idcliente = ?';
+        } else {
+            $sql = 'UPDATE favoritos
+                    SET ativo = "N"
+                    WHERE idproduto = ?
+                    AND idcliente = ?';
+            $curtiu = false;
+        }
+
+        $st = DB::query($sql, $parametros);
+
+        if ($st->rowCount()) {
+            $this->retorno('success', 'Ação registrada com sucesso', ['curtiu'=>$curtiu]);
+        }
+        
+        $this->retorno('error', 'Falha ao registrar ação, nenhum registro alterado');
     }
 }

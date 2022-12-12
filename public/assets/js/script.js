@@ -14,6 +14,13 @@ document.querySelectorAll('.curtir-produto').forEach(linkCurtir=>{
                 return;
             }
             // se deu tudo certo executa o código abaixo
+            if (resposta.dados.curtiu) {
+                linkCurtir.querySelector('i').classList.remove('bi-heart');
+                linkCurtir.querySelector('i').classList.add('bi-heart-fill');
+            } else {
+                linkCurtir.querySelector('i').classList.remove('bi-heart-fill');
+                linkCurtir.querySelector('i').classList.add('bi-heart');
+            }
         });
     });
 });
