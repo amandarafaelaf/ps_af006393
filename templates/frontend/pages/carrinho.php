@@ -37,7 +37,7 @@
         <div class="col-10 d-flex align-items-center justify-content-end h3 mb-0">
             Total no carrinho
         </div>
-        <div class="col-2 text-center display-1 fs-4">
+        <div class="col-2 text-center display-1 fs-4 valor-total">
             R$ <?= number_format($valorTotal, 2, ',', '.') ?>
         </div>
         <hr class="my-3">
