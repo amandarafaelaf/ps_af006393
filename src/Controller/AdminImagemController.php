@@ -154,7 +154,7 @@ class AdminImagemController
                 ['type'=>'file', 'name'=>'arquivo', 'class'=>'col-4', 'label'=>'Arquivo', 'accept'=>'image/*'],
                 ['type'=>'readonly', 'name'=>'tipo', 'class'=>'col-2'],
                 ['type'=>'textarea', 'name'=>'descricao', 'class'=>'col-12', 'label'=>'Descrição', 'rows'=>'5'],
-                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-3', 'label'=>'Cirado em:'],
+                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-3', 'label'=>'Criado em:'],
                 ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-3', 'label'=>'Atualizado em:'],
             ]
         ];

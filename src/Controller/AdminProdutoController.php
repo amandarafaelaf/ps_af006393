@@ -147,7 +147,7 @@ class AdminProdutoController
                 ['type'=>'textarea', 'name'=>'descricao', 'class'=>'col-12', 'rows'=>4, 'label'=>'Descrição'],
                 ['type'=>'textarea', 'name'=>'especificacoes', 'class'=>'col-12', 'rows'=>4, 'label'=>'Especificações'],
 
-                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Cirado em:'],
+                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Criado em:'],
                 ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-6', 'label'=>'Atualizado em:'],
             ]
         ];

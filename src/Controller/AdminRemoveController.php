@@ -13,7 +13,7 @@ class AdminRemoveController
 
         $modelPath = "Petshop\\Model\\{$model}";
         if (!class_exists($modelPath)) {
-            redireciona($urlOrigemClick, 'danger', 'Página não localizada/Clsse de dados destino não definida');
+            redireciona($urlOrigemClick, 'danger', 'Página não localizada/Classe de dados destino não definida');
         }
 
         $objeto = new $modelPath;

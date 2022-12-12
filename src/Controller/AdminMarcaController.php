@@ -90,7 +90,7 @@ class AdminMarcaController
                 ['type'=>'readonly', 'name'=>'idmarca', 'class'=>'col-2', 'label'=>'ID Marca'],
                 ['type'=>'text', 'name'=>'marca', 'class'=>'col-4', 'label'=>'Marca', 'required'=>true],
                 ['type'=>'text', 'name'=>'fabricante', 'class'=>'col-6', 'label'=>'Nome do Fabricante'],
-                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Cirado em:'],
+                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Criado em:'],
                 ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-6', 'label'=>'Atualizado em:'],
             ]
         ];

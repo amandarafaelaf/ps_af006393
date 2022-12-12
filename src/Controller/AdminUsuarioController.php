@@ -102,7 +102,7 @@ class AdminUsuarioController
                 ['type'=>'text', 'name'=>'nome', 'class'=>'col-12', 'label'=>'Nome Completo', 'required'=>true],
                 ['type'=>'email', 'name'=>'email', 'class'=>'col-6', 'label'=>'E-mail', 'required'=>true],
                 ['type'=>'password', 'name'=>'senha', 'class'=>'col-6', 'label'=>'Senha'],
-                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Cirado em:'],
+                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Criado em:'],
                 ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-6', 'label'=>'Atualizado em:'],
             ]
         ];

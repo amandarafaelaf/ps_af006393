@@ -91,7 +91,7 @@ class AdminCategoriaController
                 ['type'=>'readonly', 'name'=>'idcategoria', 'class'=>'col-2', 'label'=>'ID Categoria'],
                 ['type'=>'text', 'name'=>'nome', 'class'=>'col-10', 'label'=>'Categoria', 'required'=>true],
                 ['type'=>'textarea', 'name'=>'descricao', 'class'=>'col-12', 'label'=>'Descrição'],
-                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Cirado em:'],
+                ['type'=>'readonly', 'name'=>'created_at', 'class'=>'col-6', 'label'=>'Criado em:'],
                 ['type'=>'readonly', 'name'=>'updated_at', 'class'=>'col-6', 'label'=>'Atualizado em:'],
             ]
         ];
