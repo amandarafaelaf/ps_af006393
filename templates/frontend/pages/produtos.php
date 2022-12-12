@@ -55,7 +55,7 @@ $produto['precodesconto'] = $produto['preco'] * (1 - $produto['desconto']);
                         class="fs-4 text-danger p-2 curtir-produto" 
                         data-idproduto="<?=$produto['idproduto']?>"
                         title="Favoritar este produto">
-                            <i class="bi bi-heart"></i>
+                            <i class="bi <?=($produto['ativo'] =='S') ? 'bi-heart-fill' : 'bi-heart' ?>"></i>
                         </a>
                     </div>
                     <div class="col-8">

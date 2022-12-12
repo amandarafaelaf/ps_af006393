@@ -259,3 +259,7 @@ Stack trace:
 #8 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
 #9 {main}
   thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 86
+[11-Dec-2022 23:48:19 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 11
+[11-Dec-2022 23:48:19 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 11
+[11-Dec-2022 23:48:28 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 11
+[11-Dec-2022 23:48:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 11
