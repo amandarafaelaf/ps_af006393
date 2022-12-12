@@ -52,15 +52,17 @@ $produto['precodesconto'] = $produto['preco'] * (1 - $produto['desconto']);
                 <div class="btn-adicionar mt-4 row">
                     <div class="col-3 me-auto text-center">
                         <a href="#" 
-                        class="fs-4 text-danger p-2 curtir-produto" 
-                        data-idproduto="<?=$produto['idproduto']?>"
-                        title="Favoritar este produto">
-                            <i class="bi <?=($produto['ativo'] =='S') ? 'bi-heart-fill' : 'bi-heart' ?>"></i>
+                           class="fs-4 text-danger p-2 curtir-produto" 
+                           data-idproduto="<?=$produto['idproduto']?>"
+                           title="Favoritar este produto">
+                           <i class="bi <?=($produto['ativo'] =='S') ? 'bi-heart-fill' : 'bi-heart' ?>"></i>
                         </a>
                     </div>
                     <div class="col-8">
-                        <a href="/carrinho/<?= $produto['idproduto'] ?>/add" class="btn btn-danger w-100">
-                            <i class="bi bi-cart-check"></i> comprar
+                        <a href="#" 
+                           class="btn btn-danger w-100 comprar-produto" 
+                           data-idproduto="<?=$produto['idproduto']?>">
+                           <i class="bi bi-cart-check"></i> comprar
                         </a>
                     </div>
                 </div>
