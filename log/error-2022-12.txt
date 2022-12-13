@@ -800,3 +800,25 @@ Stack trace:
 [13-Dec-2022 20:02:24 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
 [13-Dec-2022 20:02:39 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
 [13-Dec-2022 20:02:39 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:08:47 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:08:47 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:08:48 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:08:48 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:08:53 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:08:53 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:09:56 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 100
+[13-Dec-2022 20:09:56 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 100
+[13-Dec-2022 20:09:56 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 124
+[13-Dec-2022 20:09:56 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 124
+[13-Dec-2022 20:12:17 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:12:17 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:12:43 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:12:43 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:13:11 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:13:11 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:15:51 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:15:51 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:16:43 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\src\Controller\HomeController.php on line 18
+[13-Dec-2022 20:16:43 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
+[13-Dec-2022 20:33:32 America/Sao_Paulo] PHP Warning:  imagecreatefrompng(): gd-png: libpng warning: iCCP: known incorrect sRGB profile in C:\xampp\htdocs\projeto01\vendor\gumlet\php-image-resize\lib\ImageResize.php on line 164
+[13-Dec-2022 20:33:32 America/Sao_Paulo] PHP Warning:  imagecreatefrompng(): gd-png: libpng warning: iCCP: cHRM chunk does not match sRGB in C:\xampp\htdocs\projeto01\vendor\gumlet\php-image-resize\lib\ImageResize.php on line 164
