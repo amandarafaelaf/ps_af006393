@@ -525,3 +525,252 @@ Stack trace:
 [12-Dec-2022 21:05:07 America/Sao_Paulo] PHP Warning:  Undefined array key "imagens" in C:\xampp\htdocs\projeto01\templates\frontend\pages\nossas-lojas.php on line 11
 [12-Dec-2022 21:05:07 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\nossas-lojas.php on line 11
 [12-Dec-2022 21:05:07 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\nossas-lojas.php on line 11
+[13-Dec-2022 14:23:08 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:23:08 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(15): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 [internal function]: Petshop\Controller\HomeController->index()
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#10 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#11 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:23:12 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:23:12 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\ErrorController.php(13): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(132): Petshop\Controller\ErrorController->erro404()
+#6 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#9 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#10 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#11 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#12 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:23:23 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:23:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(15): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 [internal function]: Petshop\Controller\HomeController->index()
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#10 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#11 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:23:27 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:23:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(15): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 [internal function]: Petshop\Controller\HomeController->index()
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#10 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#11 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:24:34 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:24:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(15): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 [internal function]: Petshop\Controller\HomeController->index()
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#10 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#11 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:24:50 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:24:50 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(15): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 [internal function]: Petshop\Controller\HomeController->index()
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#10 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#11 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:24:54 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:24:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\ErrorController.php(13): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(132): Petshop\Controller\ErrorController->erro404()
+#6 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#9 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#10 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#11 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#12 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:38:07 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:38:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(15): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 [internal function]: Petshop\Controller\HomeController->index()
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#10 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#11 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:38:11 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:38:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\HomeController.php(15): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 [internal function]: Petshop\Controller\HomeController->index()
+#6 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('\\Petshop\\Contro...', Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#10 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#11 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 14:38:15 America/Sao_Paulo] SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[13-Dec-2022 14:38:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Petshop\Core\Exception: Falha ao realizar a conexão com o servidor, tente novamente mais tarde in C:\xampp\htdocs\projeto01\src\Core\DB.php:35
+Stack trace:
+#0 C:\xampp\htdocs\projeto01\src\Core\DB.php(65): Petshop\Core\DB::getInstance()
+#1 C:\xampp\htdocs\projeto01\src\Core\DB.php(51): Petshop\Core\DB::query('SELECT * FROM e...', Array)
+#2 C:\xampp\htdocs\projeto01\src\Core\DAO.php(163): Petshop\Core\DB::select('SELECT * FROM e...', Array)
+#3 C:\xampp\htdocs\projeto01\src\Core\FrontController.php(19): Petshop\Core\DAO->find(Array)
+#4 C:\xampp\htdocs\projeto01\src\Controller\ErrorController.php(13): Petshop\Core\FrontController->carregaHTMLTopo()
+#5 C:\xampp\htdocs\projeto01\src\Core\App.php(132): Petshop\Controller\ErrorController->erro404()
+#6 [internal function]: Petshop\Core\App::Petshop\Core\{closure}()
+#7 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(372): Bramus\Router\Router->invoke(Object(Closure))
+#9 C:\xampp\htdocs\projeto01\vendor\bramus\router\src\Bramus\Router\Router.php(292): Bramus\Router\Router->trigger404(Array)
+#10 C:\xampp\htdocs\projeto01\src\Core\App.php(38): Bramus\Router\Router->run()
+#11 C:\xampp\htdocs\projeto01\public\index.php(7): Petshop\Core\App::start()
+#12 {main}
+  thrown in C:\xampp\htdocs\projeto01\src\Core\DB.php on line 35
+[13-Dec-2022 15:37:25 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:37:25 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:27 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:27 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:32 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:32 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:34 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:34 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:36 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:36 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:41 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 15:38:41 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\categorias.php on line 13
+[13-Dec-2022 16:43:10 America/Sao_Paulo] PHP Warning:  Undefined variable $empresas in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 83
+[13-Dec-2022 16:43:10 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 83
+[13-Dec-2022 16:43:41 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 84
+[13-Dec-2022 16:43:41 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 84
+[13-Dec-2022 16:43:41 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 84
+[13-Dec-2022 16:43:41 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 84
+[13-Dec-2022 16:47:55 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:47:55 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:47:55 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:47:55 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:50:27 America/Sao_Paulo] PHP Warning:  Undefined variable $categorias in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:50:27 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:50:28 America/Sao_Paulo] PHP Warning:  Undefined variable $categorias in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:50:28 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:51:48 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:51:48 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:52:06 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:52:06 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:52:07 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:52:07 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 85
+[13-Dec-2022 16:55:07 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 89
+[13-Dec-2022 16:55:07 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 89
+[13-Dec-2022 16:55:36 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 89
+[13-Dec-2022 16:55:36 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 89
+[13-Dec-2022 16:55:41 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 89
+[13-Dec-2022 16:55:41 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 89
+[13-Dec-2022 16:58:22 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 102
+[13-Dec-2022 16:58:22 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 102
+[13-Dec-2022 16:58:41 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 102
+[13-Dec-2022 16:58:41 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 102
+[13-Dec-2022 16:59:10 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 16:59:10 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 16:59:19 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 16:59:19 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 16:59:53 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 16:59:53 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 16:59:54 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 16:59:54 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:18 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:18 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:32 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:32 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:33 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:33 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:33 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:33 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:35 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:35 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:59 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:00:59 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:00 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:00 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:00 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:00 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:01 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:01 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:09 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:10 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:10 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:16 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:01:16 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:02:30 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\meus-dados.php on line 19
+[13-Dec-2022 17:02:30 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\meus-dados.php on line 19
+[13-Dec-2022 17:03:19 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:03:19 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:03:20 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:03:20 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:03:43 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:03:43 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:03:59 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:03:59 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:06:09 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 17:06:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
