@@ -784,3 +784,19 @@ Stack trace:
 [13-Dec-2022 19:10:41 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 11
 [13-Dec-2022 19:26:35 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
 [13-Dec-2022 19:26:35 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:44:19 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:44:19 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:44:20 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:44:20 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:49:55 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:49:55 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:53:50 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:53:50 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:56:15 America/Sao_Paulo] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 11
+[13-Dec-2022 19:56:15 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\projeto01\templates\frontend\pages\produtos.php on line 11
+[13-Dec-2022 19:56:19 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 19:56:19 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:02:24 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:02:24 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:02:39 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103
+[13-Dec-2022 20:02:39 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 103

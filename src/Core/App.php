@@ -62,6 +62,7 @@ class App
         self::$router->get('/carrinho', '\Petshop\Controller\CarrinhoController@listar');
         self::$router->get('/nossas-lojas', '\Petshop\Controller\EmpresaController@listar');
         self::$router->get('/favoritos', '\Petshop\Controller\FavoritoController@listar');
+        self::$router->get('/busca', '\Petshop\Controller\BuscaController@listar');
     }
 
     /**

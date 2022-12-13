@@ -36,7 +36,7 @@
             </div>
             <div class="topo-site-busca col-6">
                 <form action="/busca" method="GET" class="position-relative h-100 d-flex align-items-center">
-                    <input type="text" name="ps-busca" class="form-control input-busca rounded-5 pe-5">
+                    <input type="text" name="ps-busca" class="form-control input-busca rounded-5 pe-5" value="<?=$_GET['ps-busca'] ?? ''?>">
                     <button type="submit" class="btn-busca"><i class="bi bi-search"></i></button>
                 </form>
             </div>
