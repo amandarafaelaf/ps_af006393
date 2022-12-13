@@ -29,7 +29,7 @@ class CategoriaController extends FrontController
 
         $produtos = (new Produto)->find(['idcategoria=' => $categoria->getIdcategoria()]);
 
-        foreach($produtos as $p) {
+        foreach($produtos as &$p) {
             $produtoAtual = new Produto;
             $produtoAtual->loadById($p['idproduto']);
             $p['imagens'] = $produtoAtual->getFiles();
