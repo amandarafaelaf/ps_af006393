@@ -13,7 +13,7 @@ class AdminImagemController
     {
         $modelPath = "Petshop\\Model\\{$model}";
         if (!class_exists($modelPath)) {
-            redireciona('/admin/dashboard', 'danger', 'Página não localizada/Clsse de dados destino não definida');
+            redireciona('/admin/dashboard', 'danger', 'Página não localizada/Classe de dados destino não definida');
         }
 
         $objetoComFiguras = new $modelPath;
