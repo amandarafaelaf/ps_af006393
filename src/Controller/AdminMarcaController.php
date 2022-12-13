@@ -13,6 +13,7 @@ class AdminMarcaController
         // alimentando dados para a tabela de listagem
         $dadosListagem= [];
         $dadosListagem['objeto'] = new Marca;
+        $dadosListagem['imagens'] = true;
         $dadosListagem['colunas'] = [
             ['campo'=>'idmarca', 'class'=>'text-center'],
             ['campo'=>'marca', 'class'=>'text-center'],
