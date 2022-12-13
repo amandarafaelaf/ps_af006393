@@ -52,6 +52,10 @@ class Categoria extends DAO
     public function setDescricao($descricao): self
     {
         $descricao = trim($descricao);
+        if ($descricao == '') {
+            $this->descricao = null;
+            return $this;
+        } 
         if (strlen($descricao) < 15) {
             throw new Exception('Descrição inválida');
         }
