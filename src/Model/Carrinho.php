@@ -1,24 +1,98 @@
 <?php
 
-// carrinhos
+namespace Petshop\Model;
 
-class carrinhos
+use Petshop\Core\Attribute\Campo;
+use Petshop\Core\Attribute\Entidade;
+use Petshop\Core\DAO;
+
+#[Entidade(name: 'carrinhos')]
+
+class carrinhos extends DAO
 {
-    // Cód. Carrinho, pk, nn, auto
-    private $idcarrinho;
+    #[Campo(label:'Cód. Carrinho', nn:true, pk:true, auto:true)]
+    protected $idcarrinho;
 
-    // Cód. Cliente, pk, nn
-    private $idcliente;
+    #[Campo(label:'Cód. Cliente', nn:true, pk:true)]
+    protected $idcliente;
 
-    // Valor Total, nn
-    private $valortotal;
+    #[Campo(label:'Valor Total', nn:true)]
+    protected $valortotal;
 
-    // Encerrado, nn
-    private $encerrado;
+    #[Campo(label:'Encerrado', nn:true)]
+    protected $encerrado;
 
-    // Dt. Criação, nn, auto
+    #[Campo(label:'Dt. Criação', nn:true, auto:true)]
     protected $created_at;
 
-    // Dt. Alteração, nn, auto
+    #[Campo(label:'Dt. Alteração', nn:true, auto:true)]
     protected $updated_at;
+
+    /**
+     * Get the value of idcarrinho
+     */
+    public function getIdcarrinho()
+    {
+        return $this->idcarrinho;
+    }
+
+    /**
+     * Get the value of idcliente
+     */
+    public function getIdcliente()
+    {
+        return $this->idcliente;
+    }
+
+    /**
+     * Get the value of valortotal
+     */
+    public function getValortotal()
+    {
+        return $this->valortotal;
+    }
+
+    /**
+     * Set the value of valortotal
+     */
+    public function setValortotal($valortotal): self
+    {
+        $this->valortotal = $valortotal;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of encerrado
+     */
+    public function getEncerrado()
+    {
+        return $this->encerrado;
+    }
+
+    /**
+     * Set the value of encerrado
+     */
+    public function setEncerrado($encerrado): self
+    {
+        $this->encerrado = $encerrado;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of created_at
+     */
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+    }
+
+    /**
+     * Get the value of updated_at
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updated_at;
+    }
 }
