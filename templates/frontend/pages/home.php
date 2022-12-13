@@ -80,6 +80,43 @@
 
     </div>
 
+    <div class="row mt-5">
+        <h1 class="pb-3 rounded-2 display-6 w-100">Pet Shop</h1>
+        <p class="text-justify">
+        Só quem é apaixonado por animais sabe: a relação de amor e cumplicidade que temos com nossos bichinhos de estimação é um vínculo único! Por essa razão, não medimos esforços para oferecer o que há de melhor para trazer ainda mais alegria e qualidade de vida. Rações, acessórios, medicamentos e brinquedos estão na nossa listinha de prioridades; e tudo isso você encontra em nosso Pet Shop online.
+        </p>
+        <p class="text-justify">
+        Cada item é separado de acordo não apenas com a espécie dos nossos queridos amiguinhos, mas também segundo o peso, a idade e até as condições físicas. Com isso, é possível facilitar a busca de produtos para pet perfeitos sem perder muito tempo. Afinal, a melhor experiência é aproveitar cada momento ao lado dos nossos companheiros.
+        </p>
+        <p class="text-justify">
+        Por isso, conveniência é uma de nossas virtudes! A qualquer hora do dia ou da noite, tudo sobre pet shop — e sobre nossos animais — você pode encontrar aqui. Sempre com a qualidade das melhores marcas e com o cuidado da Petz.
+        </p>
+    </div>
+
+    <div class="row">
+        <img src="/assets/img/banner/bannerAzul.jpg" class="img-fluid mt-5" alt="...">
+    </div>
+
+    <!-- <div class="row">
+        <?php
+
+        foreach ($produtos as $p) {
+            //$primeiraImagem = $p['imagens'][0]['url'] ?? 'https://picsum.photos/300';
+            $preco = number_format($p['preco'], 2, ',', '.');
+            $nome = strlen($p['nome']) < 50 ? $p['nome'] : substr($p['nome'], 0, 50) . '...';
+            $link = '/produtos/' . $p['idproduto'];
+
+            echo <<<HTML
+                    <div class="col produto position-relative mb-3">
+                        <img src="{$primeiraImagem}" class="img-fluid rounded" alt="{$p['nome']}">
+                        <p class="mb-0 mt-2 text-center"><strong>{$nome}</strong></p>
+                        <a href="{$link}" class="btn btn-success btn-sm w-100 my-2 stretched-link">R$ {$preco}</a>
+                    </div>
+                HTML;
+        }
+        ?>
+    </div> -->
+
 
 
 </div>

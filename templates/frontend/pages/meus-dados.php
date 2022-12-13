@@ -13,4 +13,8 @@
             - meus favoritos <br>
         </div>
     </div>
+    <div class="row">
+        <hr class="mt-3">
+        
+    </div>
 </div>
