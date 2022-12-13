@@ -167,8 +167,12 @@ class Empresa extends DAO
     }
     public function setRua(string $rua): self
     {
-        $this->rua = $rua;
+        if ($rua == '') {
+            $this->rua = null;
+            return $this;
+        } 
 
+        $this->rua = $rua;
         return $this;
     }
 
@@ -178,8 +182,12 @@ class Empresa extends DAO
     }
     public function setBairro(string $bairro): self
     {
-        $this->bairro = $bairro;
+        if ($bairro == '') {
+            $this->bairro = null;
+            return $this;
+        } 
 
+        $this->bairro = $bairro;
         return $this;
     }
 
@@ -189,8 +197,12 @@ class Empresa extends DAO
     }
     public function setNumero(string $numero): self
     {
-        $this->numero = $numero;
+        if ($numero == '') {
+            $this->numero = null;
+            return $this;
+        } 
 
+        $this->numero = $numero;
         return $this;
     }
 
@@ -217,6 +229,12 @@ class Empresa extends DAO
     public function setTelefone2($telefone2): self
     {
         $telefone2 = trim($telefone2);
+        
+        if ($telefone2 == '') {
+            $this->telefone2 = null;
+            return $this;
+        } 
+        
         $tamanhoValido = v::phone()->validate($telefone2);
         if (!$tamanhoValido) {
             throw new Exception('O campo Telefone 02 tem valor inválido');
@@ -233,6 +251,12 @@ class Empresa extends DAO
     public function setSite(string $site): self
     {
         $site = trim($site);
+
+        if ($site == '') {
+            $this->site = null;
+            return $this;
+        } 
+
         $tamanhoValido = v::url()->validate($site);
         if (!$tamanhoValido) {
             throw new Exception('O campo Site tem valor inválido');

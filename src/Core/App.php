@@ -60,6 +60,7 @@ class App
         self::$router->get('/categorias/{id}', '\Petshop\Controller\CategoriaController@lista');
         self::$router->get('/produtos/{id}', '\Petshop\Controller\ProdutoController@mostrarProduto');
         self::$router->get('/carrinho', '\Petshop\Controller\CarrinhoController@listar');
+        self::$router->get('/nossas-lojas', '\Petshop\Controller\EmpresaController@listar');
     }
 
     /**
@@ -111,6 +112,10 @@ class App
             self::$router->get('/imagens/(\w+)/(\d+)', '\Petshop\Controller\AdminImagemController@listar');
             self::$router->get('/imagens/(\w+)/(\d+)/(\w+)', '\Petshop\Controller\AdminImagemController@form');
             self::$router->post('/imagens/(\w+)/(\d+)/(\w+)', '\Petshop\Controller\AdminImagemController@postForm');
+
+            self::$router->get('/empresas', '\Petshop\Controller\AdminEmpresaController@listar');
+            self::$router->get('/empresas/{valor}', '\Petshop\Controller\AdminEmpresaController@form');
+            self::$router->post('/empresas/{valor}', '\Petshop\Controller\AdminEmpresaController@postForm');
         });
     }
 

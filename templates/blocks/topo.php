@@ -31,7 +31,7 @@
         <div class="topo-site-superior row pt-3 pb-1">
             <div class="col-2 topo-site-logo d-flex align-items-center">
                 <a href="/" title="Voltar ao início do site">
-                    <img src="../../public/assets/img/logo_site.png" width="180" height="50" alt="Logo" class="img-fluid rounded-1">
+                    <img src="/assets/img/logo_site.png" width="180" height="50" alt="Logo" class="img-fluid rounded-1">
                 </a>
             </div>
             <div class="topo-site-busca col-6">

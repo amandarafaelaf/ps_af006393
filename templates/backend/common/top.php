@@ -66,6 +66,11 @@
                             Dashboard
                         </a>
 
+                        <a class="nav-link" href="/admin/empresas">
+                            <div class="sb-nav-link-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            Empresas
+                        </a>
+
                         <a class="nav-link" href="/admin/usuarios">
                             <div class="sb-nav-link-icon"><i class="bi bi-person-fill-lock"></i></div>
                             Usuários
