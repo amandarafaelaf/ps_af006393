@@ -822,3 +822,5 @@ Stack trace:
 [13-Dec-2022 20:16:43 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\home.php on line 104
 [13-Dec-2022 20:33:32 America/Sao_Paulo] PHP Warning:  imagecreatefrompng(): gd-png: libpng warning: iCCP: known incorrect sRGB profile in C:\xampp\htdocs\projeto01\vendor\gumlet\php-image-resize\lib\ImageResize.php on line 164
 [13-Dec-2022 20:33:32 America/Sao_Paulo] PHP Warning:  imagecreatefrompng(): gd-png: libpng warning: iCCP: cHRM chunk does not match sRGB in C:\xampp\htdocs\projeto01\vendor\gumlet\php-image-resize\lib\ImageResize.php on line 164
+[13-Dec-2022 20:44:28 America/Sao_Paulo] PHP Warning:  Undefined variable $produtos in C:\xampp\htdocs\projeto01\templates\frontend\pages\meus-dados.php on line 22
+[13-Dec-2022 20:44:28 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\projeto01\templates\frontend\pages\meus-dados.php on line 22
